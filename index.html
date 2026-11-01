@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Little Luxe Gifts | Magic Moments, Beautifully Wrapped</title>
+<meta name="description" content="Little Luxe Gifts — a beautiful boutique gift shop in Soweto, South Africa. Shop birthday gifts, gifts for her, gifts for him, kids toys, baby gifts, gift boxes & hampers, personalised gifts and Christmas gifts. Order easily on WhatsApp.">
+<meta name="keywords" content="gift shop Soweto, Little Luxe Gifts, birthday gifts, gifts for her, gifts for him, kids toys, baby gifts, gift boxes, hampers, personalised gifts, Christmas gifts, South Africa gifts">
+<meta name="author" content="Little Luxe Gifts">
+<meta name="theme-color" content="#b06ab3">
+<link rel="canonical" href="index.html">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Little Luxe Gifts | Magic Moments, Beautifully Wrapped">
+<meta property="og:description" content="Discover beautiful gifts, thoughtful surprises and special treasures for every occasion.">
+<meta property="og:image" content="assets/logo.svg">
+
+<!-- Structured data for local business SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GiftShop",
+  "name": "Little Luxe Gifts",
+  "slogan": "Magic Moments, Beautifully Wrapped.",
+  "image": "assets/logo.svg",
+  "telephone": "+27787412314",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "255 Nightingale Street",
+    "addressLocality": "Mofolo South, Soweto",
+    "postalCode": "1801",
+    "addressCountry": "ZA"
+  },
+  "openingHours": "Mo-Sa 09:00-18:00"
+}
+</script>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce" id="announce">
+  <span>✨ Free gift wrapping on every order &middot; Order today on WhatsApp <b>078 741 2314</b></span>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Little Luxe Gifts home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="40" height="40"><defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e79fc4"/><stop offset=".5" stop-color="#b06ab3"/><stop offset="1" stop-color="#c9a227"/></linearGradient></defs><path fill="url(#bg1)" d="M24 4l4.2 8.9 9.8 1.4-7.1 6.9 1.7 9.7L24 36.4l-8.6 4.5 1.7-9.7-7.1-6.9 9.8-1.4z"/><path fill="#fff" d="M16 38h16l-1.6 5.6a2 2 0 0 1-1.9 1.4h-9a2 2 0 0 1-1.9-1.4L16 38z" opacity=".92"/><rect x="14" y="34.4" width="20" height="3.2" rx="1.6" fill="#fff" opacity=".92"/><rect x="23" y="22" width="2" height="12" fill="#fff" opacity=".8"/></svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Little Luxe Gifts</span>
+        <span class="brand-tag">Magic Moments, Beautifully Wrapped.</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#shop">Shop All</a>
+      <a href="#categories">Categories</a>
+      <a href="#featured">Featured</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search products">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open shopping cart">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6L5 3H2"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Search overlay -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="wrap">
+    <form class="search-form" id="searchForm" role="search">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" id="searchInput" placeholder="Search gifts, toys, hampers…" aria-label="Search products" autocomplete="off">
+      <button type="button" class="search-close" id="searchClose" aria-label="Close search">Close</button>
+    </form>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Boutique gifting &middot; Soweto, South Africa</span>
+      <h1>Make Every Moment Special with <em>Little Luxe Gifts.</em></h1>
+      <p class="hero-sub">Discover beautiful gifts, thoughtful surprises and special treasures for every occasion — beautifully wrapped and delivered with love.</p>
+      <div class="hero-cta">
+        <a href="#shop" class="btn btn-primary">Shop Now</a>
+        <a href="#categories" class="btn btn-ghost">Browse Categories</a>
+      </div>
+      <ul class="hero-badges">
+        <li>✦ Free gift wrapping</li>
+        <li>✦ WhatsApp ordering</li>
+        <li>✦ Thoughtful, hand-picked gifts</li>
+      </ul>
+    </div>
+    <div class="hero-collage" id="heroCollage" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><span class="ti-icon">🎁</span><div><b>Hand-Picked Gifts</b><small>Beautiful pieces for every occasion</small></div></div>
+    <div class="trust-item"><span class="ti-icon">💜</span><div><b>Wrapped with Love</b><small>Free gift wrapping on every order</small></div></div>
+    <div class="trust-item"><span class="ti-icon">📱</span><div><b>Order on WhatsApp</b><small>Quick, friendly and easy ordering</small></div></div>
+    <div class="trust-item"><span class="ti-icon">🚚</span><div><b>Soweto &amp; Nationwide</b><small>Delivery arranged on request</small></div></div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section" id="categories">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="eyebrow">Find the perfect present</span>
+      <h2>Shop by Gift Category</h2>
+      <p>From first birthdays to Christmas morning — find a beautifully wrapped surprise for everyone on your list.</p>
+    </header>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- Special offers -->
+<section class="section offers" id="offers">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="eyebrow">Bright colours &middot; big smiles</span>
+      <h2>Special Offers</h2>
+      <p>Limited-time bundles and festive deals. Message us on WhatsApp to claim.</p>
+    </header>
+    <div class="offer-grid">
+      <article class="offer-card offer-1">
+        <span class="offer-tag">Save 15%</span>
+        <h3>Gift Box &amp; Hamper Bundle</h3>
+        <p>Buy any two gift boxes and save 15% — beautifully wrapped and ready to give.</p>
+        <button class="btn btn-primary js-offer" data-cat="Gift Boxes and Hampers">Shop Hampers</button>
+      </article>
+      <article class="offer-card offer-2">
+        <span class="offer-tag">Festive</span>
+        <h3>Christmas Corner</h3>
+        <p>Stocking fillers, festive mugs and ornaments to make the season magical.</p>
+        <button class="btn btn-primary js-offer" data-cat="Christmas Gifts">Shop Christmas</button>
+      </article>
+      <article class="offer-card offer-3">
+        <span class="offer-tag">New</span>
+        <h3>Little Ones' Favourites</h3>
+        <p>Fresh arrivals in toys, plush friends and creative play sets.</p>
+        <button class="btn btn-primary js-offer" data-cat="Toys and Playtime">Shop Toys</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Featured / Best sellers / New arrivals -->
+<section class="section" id="featured">
+  <div class="wrap">
+    <div class="rail-tabs" role="tablist" aria-label="Product showcases">
+      <button class="rail-tab active" data-rail="featured" role="tab" aria-selected="true">Featured</button>
+      <button class="rail-tab" data-rail="bestsellers" role="tab" aria-selected="false">Best Sellers</button>
+      <button class="rail-tab" data-rail="new" role="tab" aria-selected="false">New Arrivals</button>
+    </div>
+    <div class="rail-head">
+      <h2 id="railTitle">Featured Gifts</h2>
+      <a href="#shop" class="link-arrow">View all gifts →</a>
+    </div>
+    <div class="product-rail" id="productRail"></div>
+  </div>
+</section>
+
+<!-- Shop all -->
+<section class="section shop" id="shop">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="eyebrow">Our full collection</span>
+      <h2>Shop All Gifts</h2>
+      <p id="resultsLine">Loading beautiful gifts…</p>
+    </header>
+
+    <div class="shop-toolbar">
+      <div class="filter-chips" id="filterChips"></div>
+      <div class="toolbar-right">
+        <label class="select-wrap">
+          <span class="sr-only">Sort products</span>
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Sort: Featured</option>
+            <option value="az">Name: A–Z</option>
+            <option value="za">Name: Z–A</option>
+            <option value="cat">Category</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <div class="load-more-wrap">
+      <button class="btn btn-ghost" id="loadMoreBtn">Load more gifts</button>
+    </div>
+    <div class="empty-state" id="emptyState" hidden>
+      <span>🔍</span>
+      <h3>No gifts found</h3>
+      <p>Try a different search or category. We have over 500 lovely gifts in store.</p>
+      <button class="btn btn-primary" id="clearFilters">Show all gifts</button>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testimonials" id="testimonials">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="eyebrow">Loved by our customers</span>
+      <h2>Magic Moments, Shared</h2>
+      <p>Real words from people who trusted us with their special moments.</p>
+    </header>
+    <div class="testi-grid">
+      <figure class="testi-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>“The gift wrapping was stunning and my daughter loved her birthday surprise. Ordering on WhatsApp was so easy!”</blockquote>
+        <figcaption><b>Nomsa M.</b><span>Soweto</span></figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Beautiful quality gifts and such friendly service. My go-to shop for Christmas presents now.”</blockquote>
+        <figcaption><b>Thandi K.</b><span>Johannesburg</span></figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>“I found the perfect gift for my husband and it arrived beautifully presented. Highly recommended!”</blockquote>
+        <figcaption><b>Lerato D.</b><span>Mofolo South</span></figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>“So many lovely things to choose from. The hampers are gorgeous and make such special gifts.”</blockquote>
+        <figcaption><b>Aisha P.</b><span>Roodepoort</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <span class="eyebrow">We'd love to help</span>
+      <h2>Get in Touch with Little Luxe Gifts</h2>
+      <p>Have a question, need a gift recommendation, or want to place an order? Send us a message on WhatsApp — we're always happy to help you find the perfect gift.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="ci">📍</span>
+          <div><b>Visit our shop</b><span>255 Nightingale Street<br>Mofolo South, Soweto<br>1801, South Africa</span></div>
+        </li>
+        <li>
+          <span class="ci">💬</span>
+          <div><b>WhatsApp</b><a href="https://wa.me/27787412314" target="_blank" rel="noopener">078 741 2314</a></div>
+        </li>
+        <li>
+          <span class="ci">🕘</span>
+          <div><b>Opening hours</b><span>Monday – Saturday, 9:00 – 18:00</span></div>
+        </li>
+      </ul>
+      <a class="btn btn-whatsapp" href="https://wa.me/27787412314?text=Hi%20Little%20Luxe%20Gifts!%20I'd%20like%20to%20enquire%20about%20a%20gift." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.5-5.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 12a5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.6 1.6.4 1.9.4a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>
+        Chat with us on WhatsApp
+      </a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-inner">
+        <h3>Quick Enquiry</h3>
+        <p>Send us a message and we'll reply as soon as we can.</p>
+        <form id="enquiryForm" class="enquiry-form">
+          <label>Your name<input type="text" id="enqName" placeholder="e.g. Sarah" required></label>
+          <label>Your message<textarea id="enqMsg" rows="3" placeholder="I'm looking for a birthday gift for a 6-year-old…"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-block">Send via WhatsApp</button>
+        </form>
+        <p class="mini-note">This opens WhatsApp with your message ready to send.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name">Little Luxe Gifts</span>
+      <span class="brand-tag">Magic Moments, Beautifully Wrapped.</span>
+      <p>Your boutique gift shop in Soweto — beautiful gifts, thoughtful surprises and special treasures for every occasion.</p>
+      <div class="socials">
+        <a href="https://wa.me/27787412314" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+        <a href="#shop" aria-label="Shop">Shop</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#shop" data-cat-link="Birthday Gifts">Birthday Gifts</a></li>
+        <li><a href="#shop" data-cat-link="Gifts for Her">Gifts for Her</a></li>
+        <li><a href="#shop" data-cat-link="Gifts for Him">Gifts for Him</a></li>
+        <li><a href="#shop" data-cat-link="Gifts for Kids">Gifts for Kids</a></li>
+        <li><a href="#shop" data-cat-link="Toys and Playtime">Toys and Playtime</a></li>
+        <li><a href="#shop" data-cat-link="Christmas Gifts">Christmas Gifts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#shop">Order on WhatsApp</a></li>
+        <li><a href="#offers">Special Offers</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Find Us</h4>
+      <address>
+        255 Nightingale Street<br>
+        Mofolo South, Soweto<br>
+        1801, South Africa<br>
+        <a href="https://wa.me/27787412314" target="_blank" rel="noopener">078 741 2314</a>
+      </address>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Little Luxe Gifts. All rights reserved.</span>
+    <span>Magic Moments, Beautifully Wrapped.</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/27787412314?text=Hi%20Little%20Luxe%20Gifts!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.5-5.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 12a5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.6 1.6.4 1.9.4a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>
+  <span>Order on WhatsApp</span>
+</a>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <header class="cart-head">
+    <h3>Your Gift Basket</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </header>
+  <div class="cart-body" id="cartBody"></div>
+  <footer class="cart-foot">
+    <div class="cart-total-row"><span>Order total</span><b id="cartTotal">Enquire</b></div>
+    <p class="mini-note">Prices are confirmed by Little Luxe Gifts on WhatsApp before payment.</p>
+    <button class="btn btn-whatsapp btn-block" id="cartWhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z"/></svg>
+      Order on WhatsApp
+    </button>
+    <button class="btn btn-ghost btn-block" id="cartClear">Clear basket</button>
+  </footer>
+</aside>
+
+<!-- Product quick view modal -->
+<div class="modal" id="productModal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-label="Product details">
+    <button class="icon-btn modal-close" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-grid" id="modalGrid"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
